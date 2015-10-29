@@ -19,6 +19,7 @@
 }
 
 .tp { 
+    text-align: center;
     width:16.3em;
     white-space:nowrap;
     overflow:hidden;
