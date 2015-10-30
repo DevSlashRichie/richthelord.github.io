@@ -153,7 +153,8 @@ aside {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #21797A!important;
+    color: #21797A !important;
+    text-shadow: 0 0 10px #21797A;
     background-color: transparent;
 }
 

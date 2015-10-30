@@ -26,3 +26,29 @@ $(function(){
             backDelay: 600
 	});
 });
+
+function isVisible(elem) {
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+
+$(document).ready(function(){
+ 
+	$(window).scroll(function(){
+		if(isVisible("#social") || isVisible(".footer")){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
