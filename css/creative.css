@@ -79,7 +79,21 @@ p {
     line-height: 1.5;
 }
 
+#about, #services{
+    padding-top: 180px;
+    padding-bottom: 250px;
+}
+
+#social {
+    padding-top: 180px;
+}
+
+#contact{
+    padding-bottom: 200px;
+}
+
 .bg-primary {
+
     background-color: #21797A;
 }
 
